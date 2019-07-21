@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  margin-top: 8em;
+}
+
+.note-body{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px lightblue solid;
+  border-bottom: 1px lightblue solid;
+  align-items: center;
+  padding-left: .25em;
+  background-color: #ededed;
+}
+
+.note-title {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.note-content {
+  color: #3f3f3f;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.edit {
+  color: white;
+  background-color: #008CBA;
+  border: 1px white solid;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;;
+  padding-top: 2.5px;
+  padding-bottom: 3px;
+  margin-right: 5px;
+}
+
+.edit:hover {
+  color: #008CBA;
+  background-color: white;
+  border: 1px #008CBA solid;
+}
+
+.delete {
+  background-color: #f44336;
+  border: 1px white solid;
+  color: white;
+  margin-right: 5px;
+}
+
+.delete:hover {
+  color: #f44336;
+  background-color: white;
+  border: 1px #f44336 solid;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

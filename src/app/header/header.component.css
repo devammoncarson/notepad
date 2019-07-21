@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.logo {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  width: 100vw;
+}
+
+.logo > a > p {
+	font-size: 10px;
+	color: lightblue;
+}
+
+a {
+  text-decoration: none;
+    font-size: 4em;
+	color: white;
+}
+
+p {
+	color: white;
+	font-size: 30px;
+}

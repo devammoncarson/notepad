@@ -1,0 +1,14 @@
+<div class="loading" *ngIf="isLoading">LOADING...</div>
+<div class="note-body" *ngFor="let post of posts">
+  <div class="note-title">
+    {{ post.title }}
+  </div>
+  <div class="note-content">
+    {{ post.content }}
+  </div>
+  <div class="actions">
+  <a class="edit" [routerLink]="['/edit', post.id]">EDIT</a>
+  <button class="delete" (click)="onDelete(post.id)">DELETE</button>
+  </div>
+</div>
+<p class="info-text" *ngIf="posts.length <= 0 && !isLoading">No notes have been added. Please create a new note!</p>

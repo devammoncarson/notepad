@@ -1,0 +1,23 @@
+<div class="loading" *ngIf="isLoading">LOADING...</div>
+<div class="new-note-container">
+  <form (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!isLoading">
+      <input
+        type="text"
+        name="title"
+        [ngModel]="post?.title"
+        required
+        minlength="1"
+        placeholder="Note Title"
+        #title="ngModel">
+      <div class="error" *ngIf="title.invalid">Please enter a note title.</div>
+      <textarea
+        rows="2"
+        name="content"
+        [ngModel]="post?.content"
+        required
+        placeholder="Note Content"
+        #content="ngModel"></textarea>
+        <div class="error" *ngIf="content.invalid">Please add a note.</div>
+    <button type="submit">Save Note</button>
+  </form>
+</div>

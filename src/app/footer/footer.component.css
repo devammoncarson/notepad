@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+}
+
+a {
+    margin: .5em;
+    padding: .2em;
+    font-size: 1.5em;
+    border: 1px white solid;
+    color: white;
+    text-decoration: none;
+    background-color: lightblue;
+}
+
+a:hover {
+    color: lightblue;
+    background-color: white;
+    border: 1px solid lightblue;
+}
